@@ -17,7 +17,7 @@ using DevExpress.XtraRichEdit.API.Native;
 using DevExpress.XtraGrid.Columns;
 
 namespace DevExpress.MailClient.Win {
-    public partial class Mail : BaseModule {
+    public partial class Test2 : BaseModule {
         Message currentMessage;
         PopupMenu priorityMenu, dateFilterMenu;
         RibbonControl ribbon;
@@ -27,15 +27,15 @@ namespace DevExpress.MailClient.Win {
         int focusedRowHandle = 0;
         bool lockUpdateCurrentMessage = true;
         public override string ModuleName { get { return Properties.Resources.MailName; } }
-        public Mail() {
+        public Test2() {
             InitializeComponent();
-            ucMailViewer1.SetParentModule(this);
+            ucMailViewer1Test2.SetParentModule(this);
             ShowPreview();
             CreateTimer();
         }
 
         private void Mail_Load(object sender, EventArgs e) {
-            gridControl1.ForceInitialize();
+            gridControl1Test2.ForceInitialize();
             CalcPreviewIndent();
         }
         void CreateTimer() {
@@ -50,13 +50,13 @@ namespace DevExpress.MailClient.Win {
                 messageReadTimer.Stop();
             }
         }
-        protected internal override RichEditControl CurrentRichEdit { get { return ucMailViewer1.RichEdit; } }
-        protected override DevExpress.XtraGrid.GridControl Grid { get { return gridControl1; } }
+        protected internal override RichEditControl CurrentRichEdit { get { return ucMailViewer1Test2.RichEdit; } }
+        protected override DevExpress.XtraGrid.GridControl Grid { get { return gridControl1Test2; } }
         internal override void InitModule(DevExpress.Utils.Menu.IDXMenuManager manager, object data) {
             base.InitModule(manager, data);
             EditorHelper.InitPriorityComboBox(repositoryItemImageComboBox1);
             this.ribbon = manager as RibbonControl;
-            ucMailViewer1.SetMenuManager(manager);
+            ucMailViewer1Test2.SetMenuManager(manager);
             ShowAboutRow();
         }
         void ShowAboutRow() {
@@ -90,7 +90,7 @@ namespace DevExpress.MailClient.Win {
                 lockUpdateCurrentMessage = false;
                 FocusRow(focusedRowHandle);
             }
-            gridControl1.Focus();
+            gridControl1Test2.Focus();
         }
         internal override void HideModule() {
             lockUpdateCurrentMessage = true;
@@ -98,7 +98,7 @@ namespace DevExpress.MailClient.Win {
         }
         protected override void LookAndFeelStyleChanged() {
             base.LookAndFeelStyleChanged();
-            ColorHelper.UpdateColor(ilColumns, gridControl1.LookAndFeel);
+            ColorHelper.UpdateColor(ilColumnsTest2, gridControl1Test2.LookAndFeel);
         }
         private void gridView1_CustomDrawGroupRow(object sender, DevExpress.XtraGrid.Views.Base.RowObjectCustomDrawEventArgs e) {
             GridGroupRowInfo info = e.Info as GridGroupRowInfo;
@@ -110,14 +110,14 @@ namespace DevExpress.MailClient.Win {
             if(e.Column == gcRead && e.Button == MouseButtons.Left)
                 RaiseReadMessagesChanged(e.RowHandle);
             if(e.Column.FieldName == "Priority" && e.Button == MouseButtons.Left)
-                PriorityMenu.ShowPopup(gridControl1.PointToScreen(e.Location));
-            if(e.Button == MouseButtons.Right) ShowMessageMenu(gridControl1.PointToScreen(e.Location));
+                PriorityMenu.ShowPopup(gridControl1Test2.PointToScreen(e.Location));
+            if(e.Button == MouseButtons.Right) ShowMessageMenu(gridControl1Test2.PointToScreen(e.Location));
             //if(e.Button == MouseButtons.Left && e.Clicks == 2) 
             //    EditMessage(e.RowHandle);
         }
 
         private void gridView1_RowClick(object sender, XtraGrid.Views.Grid.RowClickEventArgs e) {
-            if(e.HitInfo.HitTest == GridHitTest.RowPreview && e.Button == MouseButtons.Right) ShowMessageMenu(gridControl1.PointToScreen(e.Location));
+            if(e.HitInfo.HitTest == GridHitTest.RowPreview && e.Button == MouseButtons.Right) ShowMessageMenu(gridControl1Test2.PointToScreen(e.Location));
         }
         void EditMessage(int rowHandle) {
             if(rowHandle < 0) return;
@@ -162,7 +162,7 @@ namespace DevExpress.MailClient.Win {
             set {
                 if(currentMessage == value) return;
                 currentMessage = value;
-                ucMailViewer1.ShowMessage(CurrentMessage);
+                ucMailViewer1Test2.ShowMessage(CurrentMessage);
                 messageReadTimer.Stop();
                 if(CurrentMessage != null && CurrentMessage.IsUnread)
                     messageReadTimer.Start();
@@ -185,7 +185,7 @@ namespace DevExpress.MailClient.Win {
             else {
                 List<Message> rows = new List<Message>();
                 GridHelper.GetChildDataRowHandles(gridView1, gridView1.FocusedRowHandle, rows);
-                ucMailViewer1.ShowMessagesInfo(rows);
+                ucMailViewer1Test2.ShowMessagesInfo(rows);
                 CurrentMessage = null;
                 messageReadTimer.Stop();
             }
@@ -390,7 +390,7 @@ namespace DevExpress.MailClient.Win {
         }
         protected internal override void MessagesDataChanged(DataSourceChangedEventArgs args) {
             partName = args.Caption;
-            gridControl1.DataSource = args.List;
+            gridControl1Test2.DataSource = args.List;
             if(args.Type == MailType.Deleted) {
                 gcDate.Caption = Properties.Resources.DateDeleted;
                 gcFrom.Caption = Properties.Resources.FromDeleted;
@@ -414,7 +414,7 @@ namespace DevExpress.MailClient.Win {
         }
         FindControl FindControl {
             get {
-                foreach(Control ctrl in gridControl1.Controls) {
+                foreach(Control ctrl in gridControl1Test2.Controls) {
                     FindControl ret = ctrl as FindControl;
                     if(ret != null) return ret;
                 }
@@ -455,8 +455,8 @@ namespace DevExpress.MailClient.Win {
         }
         protected override bool AllowZoomControl { get { return true; } }
         public override float ZoomFactor {
-            get { return ucMailViewer1.ZoomFactor; }
-            set { ucMailViewer1.ZoomFactor = value; }
+            get { return ucMailViewer1Test2.ZoomFactor; }
+            set { ucMailViewer1Test2.ZoomFactor = value; }
         }
 
         private void gridView1_ColumnPositionChanged(object sender, EventArgs e) {
@@ -473,15 +473,15 @@ namespace DevExpress.MailClient.Win {
             gridView1.PreviewIndent = indent;
         }
         Point dragStart = new Point(int.MinValue, 0);
-        int[] dragSelectionTest = null;
+        int[] dragSelection = null;
         void ResetDrag() {
-            this.dragSelectionTest = null;
+            this.dragSelection = null;
             this.dragStart = new Point(int.MinValue, int.MinValue);
         }
         private void gridView1_MouseDown(object sender, MouseEventArgs e) {
             if(gridView1.CalcHitInfo(e.X, e.Y).InRow) {
                 dragStart = new Point(e.X, e.Y);
-                if(dragSelectionTest == null || dragSelectionTest.Length == 0) dragSelectionTest = new int[] { gridView1.FocusedRowHandle };
+                if(dragSelection == null || dragSelection.Length == 0) dragSelection = new int[] { gridView1.FocusedRowHandle };
             }
             else
                 ResetDrag();
@@ -492,14 +492,14 @@ namespace DevExpress.MailClient.Win {
                 Point delta = Point.Subtract(dragStart, new Size(e.X, e.Y));
                 if(Math.Abs(delta.X) > SystemInformation.DragSize.Width ||
                     Math.Abs(delta.Y) > SystemInformation.DragSize.Height) {
-                    dragSelectionTest = gridView1.GetSelectedRows();
+                    dragSelection = gridView1.GetSelectedRows();
                     StartRowsDrag();
                 }
             }
         }
 
         void StartRowsDrag() {
-            gridControl1.DoDragDrop(new dragSelectionTest() { Rows = dragSelectionTest }, DragDropEffects.Move);
+            gridControl1Test2.DoDragDrop(new DragSelection() { Rows = dragSelection }, DragDropEffects.Move);
         }
 
         internal void OnMoveEmails(ucMailTree tree, UCTreeDragDropEventArgs e) {
@@ -527,7 +527,7 @@ namespace DevExpress.MailClient.Win {
             ResetDrag();
         }
     }
-    public class dragSelectionTest {
+    public class DragSelection {
         public int[] Rows;
     }
 }

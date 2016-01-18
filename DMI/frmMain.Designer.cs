@@ -147,6 +147,11 @@
             this.biRename = new DevExpress.XtraBars.BarButtonItem();
             this.biCreateFolder = new DevExpress.XtraBars.BarButtonItem();
             this.bbiReminder = new DevExpress.XtraBars.BarButtonItem();
+            this.bbColorMix = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.rpcSearch = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.rpSearch = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgFind = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -156,25 +161,29 @@
             this.appointmentRibbonPage1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPage();
             this.actionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActionsRibbonPageGroup();
             this.optionsRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.OptionsRibbonPageGroup();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpFeeds = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgActionsFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgLayoutFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpMail = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgNew = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgDelete = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgTags = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgLayoutMail = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpContacts = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.rpgContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgCurrentView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpCalendar = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.appointmentRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPageGroup();
             this.navigatorRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.NavigatorRibbonPageGroup();
             this.arrangeRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ArrangeRibbonPageGroup();
             this.groupByRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.GroupByRibbonPageGroup();
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
-            this.rpContacts = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgCurrentView = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgLayoutContacts = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpFeeds = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.rpgFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgActionsFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpgLayoutFeeds = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpTasks = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpgTasks = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpgFollowUp = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -185,7 +194,13 @@
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarItem6 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.ucMailTree1 = new DevExpress.MailClient.Win.ucMailTree();
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
@@ -194,17 +209,19 @@
             this.ucContacts1 = new DevExpress.MailClient.Win.Controls.ucContacts();
             this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarControl2 = new DevExpress.XtraNavBar.NavBarControl();
-            this.nbgTasks = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbgCalendar = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nbgContacts = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.nbgFeeds = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgMail = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgContacts = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgCalendar = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nbgTasks = new DevExpress.XtraNavBar.NavBarGroup();
             this.pcMain = new DevExpress.XtraEditors.PanelControl();
             this.pmTreeView = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmMessage = new DevExpress.XtraBars.PopupMenu(this.components);
             this.pmFlagStatus = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.bbColorMix = new DevExpress.XtraBars.BarButtonItem();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
             this.backstageViewControl1.SuspendLayout();
             this.backstageViewClientControl1.SuspendLayout();
             this.backstageViewClientControl2.SuspendLayout();
@@ -327,19 +344,25 @@
             this.biRename,
             this.biCreateFolder,
             this.bbiReminder,
-            this.bbColorMix});
+            this.bbColorMix,
+            this.barButtonItem1,
+            this.barButtonItem2,
+            this.barButtonItem3,
+            this.barButtonItem4});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 101;
+            this.ribbonControl1.MaxItemId = 1;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.rpcSearch,
             this.calendarToolsRibbonPageCategory1});
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.rpMail,
-            this.rpCalendar,
-            this.rpContacts,
+            this.ribbonPage2,
             this.rpFeeds,
+            this.rpMail,
+            this.rpContacts,
+            this.rpCalendar,
             this.rpTasks,
+            this.ribbonPage1,
             this.rpView});
             this.ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemZoomTrackBar1,
@@ -399,7 +422,7 @@
             this.galleryControl1.DesignGalleryItemIndex = 0;
             resources.ApplyResources(this.galleryControl1, "galleryControl1");
             // 
-            // galleryControlGallery1
+            // 
             // 
             this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
             this.galleryControl1.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
@@ -446,16 +469,6 @@
             resources.ApplyResources(this.printControl1, "printControl1");
             this.printControl1.ForeColor = System.Drawing.Color.Transparent;
             this.printControl1.Name = "printControl1";
-            // 
-            // bbColorMix
-            // 
-            this.bbColorMix.Caption = "&Color Mix";
-            this.bbColorMix.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.ColorMixer_16x16;
-            this.bbColorMix.Id = 238;
-            this.bbColorMix.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.ColorMixer_32x32;
-            this.bbColorMix.LargeImageIndex = 0;
-            this.bbColorMix.Name = "bbColorMix";
-            this.bbColorMix.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbColorMix_ItemClick);
             // 
             // backstageViewClientControl4
             // 
@@ -1265,6 +1278,44 @@
             this.bbiReminder.Name = "bbiReminder";
             this.bbiReminder.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbiReminder_ItemClick);
             // 
+            // bbColorMix
+            // 
+            resources.ApplyResources(this.bbColorMix, "bbColorMix");
+            this.bbColorMix.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.ColorMixer_16x16;
+            this.bbColorMix.Id = 238;
+            this.bbColorMix.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.ColorMixer_32x32;
+            this.bbColorMix.LargeImageIndex = 0;
+            this.bbColorMix.Name = "bbColorMix";
+            this.bbColorMix.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.bbColorMix_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            resources.ApplyResources(this.barButtonItem1, "barButtonItem1");
+            this.barButtonItem1.Id = 102;
+            this.barButtonItem1.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.EditContact_32x32;
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            resources.ApplyResources(this.barButtonItem2, "barButtonItem2");
+            this.barButtonItem2.Id = 103;
+            this.barButtonItem2.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.EditContact_32x32;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            resources.ApplyResources(this.barButtonItem3, "barButtonItem3");
+            this.barButtonItem3.Glyph = global::DevExpress.MailClient.Win.Properties.Resources.Delete_32x32;
+            this.barButtonItem3.Id = 104;
+            this.barButtonItem3.LargeGlyph = global::DevExpress.MailClient.Win.Properties.Resources.Delete_32x32;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            resources.ApplyResources(this.barButtonItem4, "barButtonItem4");
+            this.barButtonItem4.Id = 105;
+            this.barButtonItem4.Name = "barButtonItem4";
+            // 
             // rpcSearch
             // 
             resources.ApplyResources(this.rpcSearch, "rpcSearch");
@@ -1343,6 +1394,71 @@
             this.optionsRibbonPageGroup1.ItemLinks.Add(this.changeAppointmentReminderItem1);
             this.optionsRibbonPageGroup1.Name = "optionsRibbonPageGroup1";
             // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Tag = "Test";
+            resources.ApplyResources(this.ribbonPage1, "ribbonPage1");
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            resources.ApplyResources(this.ribbonPageGroup1, "ribbonPageGroup1");
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup3});
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Tag = "Test2";
+            resources.ApplyResources(this.ribbonPage2, "ribbonPage2");
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            resources.ApplyResources(this.ribbonPageGroup3, "ribbonPageGroup3");
+            // 
+            // rpFeeds
+            // 
+            this.rpFeeds.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgFeeds,
+            this.rpgActionsFeeds,
+            this.rpgLayoutFeeds});
+            this.rpFeeds.Name = "rpFeeds";
+            this.rpFeeds.Tag = "Feeds";
+            resources.ApplyResources(this.rpFeeds, "rpFeeds");
+            // 
+            // rpgFeeds
+            // 
+            this.rpgFeeds.ItemLinks.Add(this.bbiNewFeed);
+            this.rpgFeeds.ItemLinks.Add(this.bbiEditFeed);
+            this.rpgFeeds.ItemLinks.Add(this.bbiDeleteFeed, true);
+            this.rpgFeeds.Name = "rpgFeeds";
+            this.rpgFeeds.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgFeeds, "rpgFeeds");
+            // 
+            // rpgActionsFeeds
+            // 
+            this.rpgActionsFeeds.AllowTextClipping = false;
+            this.rpgActionsFeeds.ItemLinks.Add(this.bbiRefreshFeed);
+            this.rpgActionsFeeds.Name = "rpgActionsFeeds";
+            this.rpgActionsFeeds.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgActionsFeeds, "rpgActionsFeeds");
+            // 
+            // rpgLayoutFeeds
+            // 
+            this.rpgLayoutFeeds.ItemLinks.Add(this.bbiRotateLayout);
+            this.rpgLayoutFeeds.ItemLinks.Add(this.bbiFlipLayout);
+            this.rpgLayoutFeeds.Name = "rpgLayoutFeeds";
+            this.rpgLayoutFeeds.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgLayoutFeeds, "rpgLayoutFeeds");
+            // 
             // rpMail
             // 
             this.rpMail.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1388,6 +1504,40 @@
             this.rpgLayoutMail.Name = "rpgLayoutMail";
             this.rpgLayoutMail.ShowCaptionButton = false;
             resources.ApplyResources(this.rpgLayoutMail, "rpgLayoutMail");
+            // 
+            // rpContacts
+            // 
+            this.rpContacts.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.rpgContacts,
+            this.rpgCurrentView,
+            this.rpgLayoutContacts});
+            this.rpContacts.Name = "rpContacts";
+            this.rpContacts.Tag = "Contacts";
+            resources.ApplyResources(this.rpContacts, "rpContacts");
+            // 
+            // rpgContacts
+            // 
+            this.rpgContacts.ItemLinks.Add(this.bbiNewContact);
+            this.rpgContacts.ItemLinks.Add(this.bbiEditContact);
+            this.rpgContacts.ItemLinks.Add(this.bbiDeleteContact, true);
+            this.rpgContacts.Name = "rpgContacts";
+            this.rpgContacts.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgContacts, "rpgContacts");
+            // 
+            // rpgCurrentView
+            // 
+            this.rpgCurrentView.ItemLinks.Add(this.rgbiCurrentView);
+            this.rpgCurrentView.Name = "rpgCurrentView";
+            this.rpgCurrentView.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgCurrentView, "rpgCurrentView");
+            // 
+            // rpgLayoutContacts
+            // 
+            this.rpgLayoutContacts.AllowTextClipping = false;
+            this.rpgLayoutContacts.ItemLinks.Add(this.bbiFlipLayout);
+            this.rpgLayoutContacts.Name = "rpgLayoutContacts";
+            this.rpgLayoutContacts.ShowCaptionButton = false;
+            resources.ApplyResources(this.rpgLayoutContacts, "rpgLayoutContacts");
             // 
             // rpCalendar
             // 
@@ -1438,75 +1588,6 @@
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchShowWorkTimeOnlyItem1);
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.switchTimeScalesItem1);
             this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
-            // 
-            // rpContacts
-            // 
-            this.rpContacts.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgContacts,
-            this.rpgCurrentView,
-            this.rpgLayoutContacts});
-            this.rpContacts.Name = "rpContacts";
-            this.rpContacts.Tag = "Contacts";
-            resources.ApplyResources(this.rpContacts, "rpContacts");
-            // 
-            // rpgContacts
-            // 
-            this.rpgContacts.ItemLinks.Add(this.bbiNewContact);
-            this.rpgContacts.ItemLinks.Add(this.bbiEditContact);
-            this.rpgContacts.ItemLinks.Add(this.bbiDeleteContact, true);
-            this.rpgContacts.Name = "rpgContacts";
-            this.rpgContacts.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgContacts, "rpgContacts");
-            // 
-            // rpgCurrentView
-            // 
-            this.rpgCurrentView.ItemLinks.Add(this.rgbiCurrentView);
-            this.rpgCurrentView.Name = "rpgCurrentView";
-            this.rpgCurrentView.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgCurrentView, "rpgCurrentView");
-            // 
-            // rpgLayoutContacts
-            // 
-            this.rpgLayoutContacts.AllowTextClipping = false;
-            this.rpgLayoutContacts.ItemLinks.Add(this.bbiFlipLayout);
-            this.rpgLayoutContacts.Name = "rpgLayoutContacts";
-            this.rpgLayoutContacts.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgLayoutContacts, "rpgLayoutContacts");
-            // 
-            // rpFeeds
-            // 
-            this.rpFeeds.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.rpgFeeds,
-            this.rpgActionsFeeds,
-            this.rpgLayoutFeeds});
-            this.rpFeeds.Name = "rpFeeds";
-            this.rpFeeds.Tag = "Feeds";
-            resources.ApplyResources(this.rpFeeds, "rpFeeds");
-            // 
-            // rpgFeeds
-            // 
-            this.rpgFeeds.ItemLinks.Add(this.bbiNewFeed);
-            this.rpgFeeds.ItemLinks.Add(this.bbiEditFeed);
-            this.rpgFeeds.ItemLinks.Add(this.bbiDeleteFeed, true);
-            this.rpgFeeds.Name = "rpgFeeds";
-            this.rpgFeeds.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgFeeds, "rpgFeeds");
-            // 
-            // rpgActionsFeeds
-            // 
-            this.rpgActionsFeeds.AllowTextClipping = false;
-            this.rpgActionsFeeds.ItemLinks.Add(this.bbiRefreshFeed);
-            this.rpgActionsFeeds.Name = "rpgActionsFeeds";
-            this.rpgActionsFeeds.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgActionsFeeds, "rpgActionsFeeds");
-            // 
-            // rpgLayoutFeeds
-            // 
-            this.rpgLayoutFeeds.ItemLinks.Add(this.bbiRotateLayout);
-            this.rpgLayoutFeeds.ItemLinks.Add(this.bbiFlipLayout);
-            this.rpgLayoutFeeds.Name = "rpgLayoutFeeds";
-            this.rpgLayoutFeeds.ShowCaptionButton = false;
-            resources.ApplyResources(this.rpgLayoutFeeds, "rpgLayoutFeeds");
             // 
             // rpTasks
             // 
@@ -1603,18 +1684,27 @@
             // 
             // navBarControl1
             // 
-            this.navBarControl1.ActiveGroup = this.nbgMail;
+            this.navBarControl1.ActiveGroup = this.navBarGroup1;
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
             resources.ApplyResources(this.navBarControl1, "navBarControl1");
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.navBarGroup1,
+            this.navBarGroup2,
+            this.nbgFeeds,
             this.nbgMail,
-            this.nbgTasks,
-            this.nbgCalendar,
             this.nbgContacts,
-            this.nbgFeeds});
+            this.nbgCalendar,
+            this.nbgTasks});
+            this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.navBarItem1,
+            this.navBarItem2,
+            this.navBarItem3,
+            this.navBarItem4,
+            this.navBarItem5,
+            this.navBarItem6});
             this.navBarControl1.MenuManager = this.ribbonControl1;
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.NavigationPaneGroupClientHeight = 320;
@@ -1623,24 +1713,60 @@
             this.navBarControl1.NavPaneStateChanged += new System.EventHandler(this.navBarControl1_NavPaneStateChanged);
             this.navBarControl1.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl1_ActiveGroupChanged);
             // 
-            // nbgMail
+            // navBarGroup1
             // 
-            resources.ApplyResources(this.nbgMail, "nbgMail");
-            this.nbgMail.ControlContainer = this.navBarGroupControlContainer1;
-            this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgMail.Expanded = true;
-            this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgMail.GroupClientHeight = 80;
-            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgMail.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Mail_32x32;
-            this.nbgMail.Name = "nbgMail";
-            this.nbgMail.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Mail_16x16;
+            resources.ApplyResources(this.navBarGroup1, "navBarGroup1");
+            this.navBarGroup1.Expanded = true;
+            this.navBarGroup1.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem3),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem4),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem5),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem6)});
+            this.navBarGroup1.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds_Large;
+            this.navBarGroup1.Name = "navBarGroup1";
+            this.navBarGroup1.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds;
+            // 
+            // navBarItem1
+            // 
+            resources.ApplyResources(this.navBarItem1, "navBarItem1");
+            this.navBarItem1.Name = "navBarItem1";
+            this.navBarItem1.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Completed_16x16;
+            // 
+            // navBarItem2
+            // 
+            resources.ApplyResources(this.navBarItem2, "navBarItem2");
+            this.navBarItem2.Name = "navBarItem2";
+            this.navBarItem2.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Completed_16x16;
+            // 
+            // navBarItem3
+            // 
+            resources.ApplyResources(this.navBarItem3, "navBarItem3");
+            this.navBarItem3.Name = "navBarItem3";
+            this.navBarItem3.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Completed_16x16;
+            // 
+            // navBarItem4
+            // 
+            resources.ApplyResources(this.navBarItem4, "navBarItem4");
+            this.navBarItem4.Name = "navBarItem4";
+            // 
+            // navBarItem5
+            // 
+            resources.ApplyResources(this.navBarItem5, "navBarItem5");
+            this.navBarItem5.Name = "navBarItem5";
+            // 
+            // navBarItem6
+            // 
+            resources.ApplyResources(this.navBarItem6, "navBarItem6");
+            this.navBarItem6.Name = "navBarItem6";
             // 
             // navBarGroupControlContainer1
             // 
             this.navBarGroupControlContainer1.Controls.Add(this.ucMailTree1);
-            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
             resources.ApplyResources(this.navBarGroupControlContainer1, "navBarGroupControlContainer1");
+            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
             // 
             // ucMailTree1
             // 
@@ -1653,8 +1779,8 @@
             // navBarGroupControlContainer2
             // 
             this.navBarGroupControlContainer2.Controls.Add(this.ucCalendar1);
-            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
             resources.ApplyResources(this.navBarGroupControlContainer2, "navBarGroupControlContainer2");
+            this.navBarGroupControlContainer2.Name = "navBarGroupControlContainer2";
             // 
             // ucCalendar1
             // 
@@ -1668,8 +1794,8 @@
             // navBarGroupControlContainer3
             // 
             this.navBarGroupControlContainer3.Controls.Add(this.ucContacts1);
-            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
             resources.ApplyResources(this.navBarGroupControlContainer3, "navBarGroupControlContainer3");
+            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
             // 
             // ucContacts1
             // 
@@ -1680,16 +1806,73 @@
             // navBarGroupControlContainer4
             // 
             this.navBarGroupControlContainer4.Controls.Add(this.navBarControl2);
-            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
             resources.ApplyResources(this.navBarGroupControlContainer4, "navBarGroupControlContainer4");
+            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
             // 
             // navBarControl2
             // 
             this.navBarControl2.ActiveGroup = null;
-            this.navBarControl2.LinkSelectionMode = XtraNavBar.LinkSelectionModeType.OneInControl;
             resources.ApplyResources(this.navBarControl2, "navBarControl2");
+            this.navBarControl2.LinkSelectionMode = DevExpress.XtraNavBar.LinkSelectionModeType.OneInControl;
             this.navBarControl2.Name = "navBarControl2";
             this.navBarControl2.OptionsNavPane.ExpandedWidth = ((int)(resources.GetObject("resource.ExpandedWidth")));
+            // 
+            // navBarGroup2
+            // 
+            resources.ApplyResources(this.navBarGroup2, "navBarGroup2");
+            this.navBarGroup2.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.navBarGroup2.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds_Large;
+            this.navBarGroup2.Name = "navBarGroup2";
+            this.navBarGroup2.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds;
+            // 
+            // nbgFeeds
+            // 
+            resources.ApplyResources(this.nbgFeeds, "nbgFeeds");
+            this.nbgFeeds.ControlContainer = this.navBarGroupControlContainer4;
+            this.nbgFeeds.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgFeeds.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgFeeds.GroupClientHeight = 579;
+            this.nbgFeeds.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgFeeds.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds_Large;
+            this.nbgFeeds.Name = "nbgFeeds";
+            this.nbgFeeds.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds;
+            this.nbgFeeds.Visible = false;
+            // 
+            // nbgMail
+            // 
+            resources.ApplyResources(this.nbgMail, "nbgMail");
+            this.nbgMail.ControlContainer = this.navBarGroupControlContainer1;
+            this.nbgMail.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgMail.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgMail.GroupClientHeight = 719;
+            this.nbgMail.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgMail.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Mail_32x32;
+            this.nbgMail.Name = "nbgMail";
+            this.nbgMail.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Mail_16x16;
+            // 
+            // nbgContacts
+            // 
+            resources.ApplyResources(this.nbgContacts, "nbgContacts");
+            this.nbgContacts.ControlContainer = this.navBarGroupControlContainer3;
+            this.nbgContacts.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgContacts.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgContacts.GroupClientHeight = 579;
+            this.nbgContacts.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgContacts.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_32x32;
+            this.nbgContacts.Name = "nbgContacts";
+            this.nbgContacts.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_16x16;
+            // 
+            // nbgCalendar
+            // 
+            resources.ApplyResources(this.nbgCalendar, "nbgCalendar");
+            this.nbgCalendar.ControlContainer = this.navBarGroupControlContainer2;
+            this.nbgCalendar.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
+            this.nbgCalendar.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
+            this.nbgCalendar.GroupClientHeight = 579;
+            this.nbgCalendar.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nbgCalendar.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Today_32x32;
+            this.nbgCalendar.Name = "nbgCalendar";
+            this.nbgCalendar.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Today_16x16;
             // 
             // nbgTasks
             // 
@@ -1698,43 +1881,6 @@
             this.nbgTasks.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Task_Large;
             this.nbgTasks.Name = "nbgTasks";
             this.nbgTasks.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Task;
-            // 
-            // nbgCalendar
-            // 
-            resources.ApplyResources(this.nbgCalendar, "nbgCalendar");
-            this.nbgCalendar.ControlContainer = this.navBarGroupControlContainer2;
-            this.nbgCalendar.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgCalendar.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgCalendar.GroupClientHeight = 80;
-            this.nbgCalendar.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgCalendar.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Today_32x32;
-            this.nbgCalendar.Name = "nbgCalendar";
-            this.nbgCalendar.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Today_16x16;
-            // 
-            // nbgContacts
-            // 
-            resources.ApplyResources(this.nbgContacts, "nbgContacts");
-            this.nbgContacts.ControlContainer = this.navBarGroupControlContainer3;
-            this.nbgContacts.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgContacts.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgContacts.GroupClientHeight = 80;
-            this.nbgContacts.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgContacts.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_32x32;
-            this.nbgContacts.Name = "nbgContacts";
-            this.nbgContacts.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.Contact_16x16;
-            // 
-            // nbgFeeds
-            // 
-            resources.ApplyResources(this.nbgFeeds, "nbgFeeds");
-            this.nbgFeeds.ControlContainer = this.navBarGroupControlContainer4;
-            this.nbgFeeds.DragDropFlags = DevExpress.XtraNavBar.NavBarDragDrop.None;
-            this.nbgFeeds.GroupCaptionUseImage = DevExpress.XtraNavBar.NavBarImage.Large;
-            this.nbgFeeds.GroupClientHeight = 80;
-            this.nbgFeeds.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nbgFeeds.LargeImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds_Large;
-            this.nbgFeeds.Name = "nbgFeeds";
-            this.nbgFeeds.SmallImage = global::DevExpress.MailClient.Win.Properties.Resources.BO_Feeds;
-            this.nbgFeeds.Visible = false;
             // 
             // pcMain
             // 
@@ -1821,6 +1967,7 @@
             this.StatusBar = this.ribbonStatusBar1;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmMain_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
             this.backstageViewControl1.ResumeLayout(false);
             this.backstageViewClientControl1.ResumeLayout(false);
             this.backstageViewClientControl2.ResumeLayout(false);
@@ -1845,6 +1992,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pmFlagStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2013,6 +2161,22 @@
         private XtraBars.BarButtonItem biCreateFolder;
         private XtraBars.BarButtonItem bbiReminder;
         private XtraBars.BarButtonItem bbColorMix;
+        private XtraNavBar.NavBarGroup navBarGroup1;
+        private XtraNavBar.NavBarItem navBarItem1;
+        private XtraNavBar.NavBarItem navBarItem2;
+        private XtraNavBar.NavBarItem navBarItem3;
+        private XtraNavBar.NavBarItem navBarItem4;
+        private XtraNavBar.NavBarItem navBarItem5;
+        private XtraNavBar.NavBarItem navBarItem6;
+        private XtraNavBar.NavBarGroup navBarGroup2;
+        private XtraBars.BarButtonItem barButtonItem1;
+        private XtraBars.BarButtonItem barButtonItem2;
+        private XtraBars.BarButtonItem barButtonItem3;
+        private XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private XtraBars.BarButtonItem barButtonItem4;
+        private XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
     }
 }
 

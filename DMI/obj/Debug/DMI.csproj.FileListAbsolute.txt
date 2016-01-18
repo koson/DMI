@@ -31,4 +31,6 @@ C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface
 C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DMI.csproj.GenerateResource.Cache
 C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DMI.exe
 C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DMI.pdb
-C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DMI.csprojResolveAssemblyReference.cache
+C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DMI.exe.licenses
+C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DevExpress.MailClient.Win.Test.resources
+C:\Users\HYUNGOOKANG\Documents\Visual Studio 2013\Projects\DigitalMeterInterface\DigitalMeterInterface\DMI\obj\Debug\DevExpress.MailClient.Win.Test2.resources

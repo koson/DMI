@@ -232,7 +232,7 @@
             resources.ApplyResources(this.splitContainerControl1.Panel1, "splitContainerControl1.Panel1");
             this.splitContainerControl1.Panel2.Controls.Add(this.ucMessageInfo1);
             resources.ApplyResources(this.splitContainerControl1.Panel2, "splitContainerControl1.Panel2");
-            this.splitContainerControl1.SplitterPosition = 147;
+            this.splitContainerControl1.SplitterPosition = 143;
             // 
             // flyoutPanel1
             // 
@@ -520,7 +520,6 @@
             this.richEditControl.EnableToolTips = true;
             this.richEditControl.MenuManager = this.ribbonControl;
             this.richEditControl.Name = "richEditControl";
-            this.richEditControl.Options.CopyPaste.MaintainDocumentSectionSettings = false;
             this.richEditControl.Options.DocumentCapabilities.Bookmarks = DevExpress.XtraRichEdit.DocumentCapability.Disabled;
             this.richEditControl.Options.DocumentCapabilities.HeadersFooters = DevExpress.XtraRichEdit.DocumentCapability.Disabled;
             this.richEditControl.Options.DocumentCapabilities.Sections = DevExpress.XtraRichEdit.DocumentCapability.Disabled;
@@ -528,11 +527,8 @@
             this.richEditControl.Options.Export.Html.EmbedImages = true;
             this.richEditControl.Options.Export.Html.HtmlNumberingListExportFormat = DevExpress.XtraRichEdit.Export.Html.HtmlNumberingListExportFormat.PlainTextFormat;
             this.richEditControl.Options.Export.Mht.HtmlNumberingListExportFormat = DevExpress.XtraRichEdit.Export.Html.HtmlNumberingListExportFormat.PlainTextFormat;
-            this.richEditControl.Options.Fields.UseCurrentCultureDateTimeFormat = false;
             this.richEditControl.Options.HorizontalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            this.richEditControl.Options.MailMerge.KeepLastParagraph = false;
             this.richEditControl.Options.VerticalRuler.Visibility = DevExpress.XtraRichEdit.RichEditRulerVisibility.Hidden;
-            this.spellChecker1.SetShowSpellCheckMenu(this.richEditControl, false);
             this.richEditControl.SpellChecker = this.spellChecker1;
             this.spellChecker1.SetSpellCheckerOptions(this.richEditControl, optionsSpelling1);
             this.richEditControl.SelectionChanged += new System.EventHandler(this.richEditControl_SelectionChanged);
@@ -1414,13 +1410,11 @@
             this.edtTo.Properties.DropDownShowMode = DevExpress.XtraEditors.TokenEditDropDownShowMode.Outlook;
             this.edtTo.Properties.EditMode = DevExpress.XtraEditors.TokenEditMode.Manual;
             this.edtTo.Properties.PopupPanel = this.flyoutPanel1;
-            this.edtTo.Properties.ShowSelectedItemsInPopup = false;
             this.edtTo.Properties.Separators.AddRange(new string[] {
             ";",
             ",",
             " ",
-            "."
-            });
+            "."});
             this.edtTo.ValidateToken += new DevExpress.XtraEditors.TokenEditValidateTokenEventHandler(this.edtTo_ValidateToken);
             this.edtTo.BeforeShowPopupPanel += new DevExpress.XtraEditors.TokenEditBeforeShowPopupPanelEventHandler(this.edtTo_BeforeShowPopupPanel);
             this.edtTo.CustomDrawTokenGlyph += new DevExpress.XtraEditors.TokenEditCustomDrawTokenGlyphEventHandler(this.edtTo_CustomDrawGlyph);

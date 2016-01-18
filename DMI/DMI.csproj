@@ -354,6 +354,18 @@
     <Compile Include="Modules\Feeds.Designer.cs">
       <DependentUpon>Feeds.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Test2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Test2.Designer.cs">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Mail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -431,12 +443,19 @@
     <EmbeddedResource Include="Modules\Feeds.resx">
       <DependentUpon>Feeds.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Test2.resx">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\Mail.resx">
       <DependentUpon>Mail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Tasks.resx">
       <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -447,7 +466,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="Dictionaries\default.zip" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

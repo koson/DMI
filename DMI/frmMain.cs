@@ -170,6 +170,8 @@ namespace DevExpress.MailClient.Win {
             nbgContacts.Tag = new NavBarGroupTagObject("Contacts", typeof(DevExpress.MailClient.Win.Contacts));
             nbgFeeds.Tag = new NavBarGroupTagObject("Feeds", typeof(DevExpress.MailClient.Win.Feeds));
             nbgTasks.Tag = new NavBarGroupTagObject("Tasks", typeof(DevExpress.MailClient.Win.Tasks));
+            navBarGroup1.Tag = new NavBarGroupTagObject("Test", typeof(DevExpress.MailClient.Win.Test));
+            navBarGroup2.Tag = new NavBarGroupTagObject("Test2", typeof(DevExpress.MailClient.Win.Test2));
         }
         public void ReadMessagesChanged() {
             ucMailTree1.RefreshTreeList();
@@ -284,6 +286,8 @@ namespace DevExpress.MailClient.Win {
             if (tag.ModuleType == typeof(DevExpress.MailClient.Win.Calendar)) return ucCalendar1;
             if(tag.ModuleType == typeof(DevExpress.MailClient.Win.Feeds)) return navBarControl2;
             if(tag.ModuleType == typeof(DevExpress.MailClient.Win.Tasks)) return nbgTasks;
+            if (tag.ModuleType == typeof(DevExpress.MailClient.Win.Test)) return navBarGroup1;
+            if (tag.ModuleType == typeof(DevExpress.MailClient.Win.Test2)) return navBarGroup2;
             return null;
         }
         private void navBarControl1_NavPaneStateChanged(object sender, EventArgs e) {
